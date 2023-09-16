@@ -4,18 +4,19 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div style={{ backgroundColor: "#bfe9db", color: "#07588a", zIndex: 10 }}>
+    <div style={{ backgroundColor: "#fff", color: "#07588a", zIndex: 10 }}>
       <nav className="navbar navbar-expand-lg navbar-light p-0 m-0 ">
         <div className="container-fluid  ">
-          <div
-            className="navbar-brand d-flex align-items-center"
-            style={{ color: "#07588a", fontSize: "30px", fontWeight: "600" }}
-          >
-            <div className="me-3 mb-2">
-              <FileEarmarkTextFill />
+          <Link to="/">
+            <div
+              className="navbar-brand d-flex align-items-center"
+              style={{ color: "#07588a", fontSize: "30px", fontWeight: "600" }}
+            >
+              <div className="me-3 mb-2">
+                <FileEarmarkTextFill />
+              </div>
             </div>
-            <div>Resume Builder</div>
-          </div>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -58,7 +59,7 @@ function NavBar() {
                     fontSize: "20px",
                   }}
                 >
-                  My Resume
+                  Preview
                 </Link>
               </li>
               <li className="nav-item">

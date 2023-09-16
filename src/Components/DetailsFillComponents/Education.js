@@ -78,9 +78,10 @@ function Education(props) {
     for (let i = start; i <= end; i++) {
       ans.push(i);
     }
+    ans.reverse();
     return ans;
   }
-  let year = yearRange(2000, 2023);
+  let year = yearRange(1950, 2023);
   return (
     <div className="container p-4 font" style={{ textAlign: "left" }}>
       <h1>Education details</h1>

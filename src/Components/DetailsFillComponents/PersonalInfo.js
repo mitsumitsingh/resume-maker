@@ -40,6 +40,27 @@ function PersonalInfo(props) {
           {/* ProfilePicUploadComponent is to show the selected profileImage in the resume uploaded by the user*/}
           <ProfilePicUploadComponent />
         </div>
+        <div className=" row font">
+          <div className="col-lg-12 col-12 pt-5 px-4">
+            <div className="row ">
+              <div className="col-lg-1 col-sm-2 col-12">
+                <label htmlFor="Textarea" className="col-sm-1 col-form-label">
+                  Profile Summary
+                </label>
+              </div>
+              <div className="col-lg-11 col-sm-10 col-12">
+                <TextArea
+                  elementId="Textarea"
+                  rows="3"
+                  value={personalHeads.Objective}
+                  onChange={(value) => {
+                    onChangeHandler("Objective", value);
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row font">
           <div className="col-lg-6 col-12 pt-5 px-4">
             <div className="row ">
@@ -118,8 +139,6 @@ function PersonalInfo(props) {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row font">
           <div className="col-lg-6 col-12 pt-5 px-4">
             <div className="row ">
               <div className="col-sm-2  col-12">
@@ -213,8 +232,6 @@ function PersonalInfo(props) {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row font">
           <div className="col-lg-6 col-12 pt-5 px-4">
             <div className="row ">
               <div className="col-sm-2  col-12">
@@ -265,27 +282,6 @@ function PersonalInfo(props) {
                   value={personalHeads.Pin}
                   onChange={(value) => {
                     onChangeHandler("Pin", value);
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" row font">
-          <div className="col-lg-12 col-12 pt-5 px-4">
-            <div className="row ">
-              <div className="col-lg-1 col-sm-2 col-12">
-                <label htmlFor="Textarea" className="col-sm-1 col-form-label">
-                  Objective
-                </label>
-              </div>
-              <div className="col-lg-11 col-sm-10 col-12">
-                <TextArea
-                  elementId="Textarea"
-                  rows="3"
-                  value={personalHeads.Objective}
-                  onChange={(value) => {
-                    onChangeHandler("Objective", value);
                   }}
                 />
               </div>

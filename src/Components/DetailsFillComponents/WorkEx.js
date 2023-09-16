@@ -79,9 +79,10 @@ function WorkEx(props) {
     for (let i = start; i <= end; i++) {
       ans.push(i);
     }
+    ans.reverse();
     return ans;
   }
-  let year = yearRange(2000, 2023);
+  let year = yearRange(1950, 2023);
   return (
     <div className="p-5" style={{ textAlign: "left" }}>
       <h2>Work Experience</h2>
@@ -187,6 +188,7 @@ function WorkEx(props) {
                       }}
                     >
                       <option> Select year</option>
+                      <option value="Present">Present</option>
                       {year.map((yr, i) => {
                         return <option key={i}>{yr}</option>;
                       })}

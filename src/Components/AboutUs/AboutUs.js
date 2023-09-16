@@ -39,14 +39,11 @@ function AboutUs() {
               }}
             >
               <i>
-                A vibrant selection of eye-catching and professional resume and
-                cover letter premium templates from Office help you stand out
-                from other applicants and leave a lasting impression. We have
-                some of the best resume templates for job seekers in almost
-                every field. Our templates are professionally designed,
-                employer-ready, ATS-friendly and easy to customize. Choose from
-                dozens of free resume templates, then use our Resume Builder to
-                create a professional resume in minutes.
+                Welcome to Resume Maker, your trusted partner in crafting
+                professional and compelling resumes that open doors to new
+                career opportunities. We understand that your resume is your
+                first impression in the job market, and we are here to help you
+                make it a lasting one.
               </i>
             </div>
           </Col>

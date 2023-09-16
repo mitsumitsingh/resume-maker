@@ -2,19 +2,19 @@ export const templateImagesPaths = [
   //this object contains the paths of the static template images that will be used to display template images in the Home page.
   {
     name: "Template 1",
-    imageSource: require("./images/temp1.jpg"),
+    imageSource: require("./images/temp1.png"),
   },
   {
     name: "Template 2",
-    imageSource: require("./images/temp2.jpg"),
+    imageSource: require("./images/temp2.png"),
   },
   {
     name: "Template 3",
-    imageSource: require("./images/temp3.jpg"),
+    imageSource: require("./images/temp3.png"),
   },
   {
     name: "Template 4",
-    imageSource: require("./images/temp4.jpg"),
+    imageSource: require("./images/temp4.png"),
   },
 ];
 
